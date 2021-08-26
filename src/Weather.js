@@ -22,7 +22,7 @@ const Weather = ()=>{
             
             const weather = async()=>{
 
-                const url=  `http://api.weatherapi.com/v1/current.json?key=4f2dc86c435f4778b07231702210407&q=${lat},${lon}&aqi=no`
+                const url=  `https://api.weatherapi.com/v1/current.json?key=4f2dc86c435f4778b07231702210407&q=${lat},${lon}&aqi=no`
                 const data = await fetch(url).then(res=> res.json())
                 
                 
